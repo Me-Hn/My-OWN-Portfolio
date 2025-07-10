@@ -106,7 +106,12 @@
         }
         .user-message::after { right: -8px; border-left-color: var(--user-color); border-right: 0; }
         .bot-message::after { left: -8px; border-right-color: var(--bot-color); border-left: 0; }
-        @media (max-width: 480px) {
-            .chatbot-container { width: 90%; right: 5%; bottom: 80px; max-height: 60vh; }
-            .chatbot-toggle-btn { width: 50px; height: 50px; right: 20px; bottom: 20px; }
-        }
+      @media (max-width: 480px) {
+    .chatbot-container { width: 90%; right: 5%; bottom: 80px; max-height: 60vh; }
+    .chatbot-toggle-btn {
+        width: 50px; height: 50px; right: 10px; bottom: 20px;
+    }
+    .chatbot-toggle-btn img {
+        max-width: 100%; max-height: 100%; object-fit: contain;
+    }
+}
